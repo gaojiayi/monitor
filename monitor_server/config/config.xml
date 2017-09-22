@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<deployment>
+<oracle>
+  <orcl_user>aioppf_201607</orcl_user>
+  <orcl_pwd>2wsx3edc</orcl_pwd>
+  <orcl_host>10.1.243.25</orcl_host>
+  <orcl_port>1521</orcl_port>
+  <orcl_sid>tadb</orcl_sid>
+</oracle>
+
+<redis_config>
+  <redis_host>10.1.243.24</redis_host>
+  <redis_port>38003</redis_port>
+  <redis_db>0</redis_db>
+</redis_config>
+
+<monitor_cycle>
+  <redis>10</redis>
+  <mongodb>10</mongodb>
+  <seda>10</seda>
+  <aiesb>10</aiesb>
+  <redis_key>10</redis_key>
+</monitor_cycle>
+
+<service_host>
+ <server_ip>10.1.243.24</server_ip>
+ <server_user>monserver</server_user>
+ <server_passwd>3edc4rfv</server_passwd>
+</service_host>
+
+<client_host>
+ <client_ip>10.1.243.24</client_ip>
+ <client_user>monnode</client_user>
+ <client_passwd>3edc4rfv</client_passwd>
+</client_host>
+
+<socket>
+ <socket_port>51500</socket_port>
+</socket>
+
+<aiesb_host>
+ <aiesb_ip>10.1.243.24</aiesb_ip>
+ <aiesb_user>aiesb</aiesb_user>
+ <aiesb_passwd>3edc4rfv</aiesb_passwd>
+</aiesb_host>
+
+<seda_host>
+ <seda_ip>10.1.243.24</seda_ip>
+ <seda_user>seda</seda_user>
+ <seda_passwd>3edc4rfv</seda_passwd>
+</seda_host>
+
+<service_path>
+<server_dir>/home/monserver/monitor_server</server_dir>
+</service_path>
+
+<client_path>
+<client_dir>/home/monnode/monitor_node</client_dir>
+</client_path>
+
+<save_days>
+  <days>3</days>
+</save_days>
+</deployment>
